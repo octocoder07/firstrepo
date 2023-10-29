@@ -1,0 +1,136 @@
+#navlist{
+    width: 100%;
+padding: 15px;
+    list-style: none;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    T
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    
+    width: 200vh;
+    overflow: none;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,246,255,1) 100%);
+
+}
+.navcontainer{
+    position: relative;
+    width: 100%;
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,98,199,1) 0%, rgba(90,139,166,1) 50%, rgba(0,212,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#navlogo{
+    font-size: 2.8rem;
+    color: white;
+}
+nav{
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navitems{
+    display: flex;
+    gap: 40px;
+}
+.footerbox{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,98,199,1) 0%, rgba(90,139,166,1) 50%, rgba(0,212,255,1) 100%);
+color: white;
+text-align: center;
+}
+.footerbox p{
+    font-size: 2rem;
+}
+.contentbox{
+    width: 50%;
+   margin: auto;
+   
+    box-shadow: 0px 1px 30px black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+.rightbox img{
+    height: 200px;
+
+    border-radius: 20px;
+    transition: all 0.6s 0s;
+
+
+}
+.rightbox:hover{
+    transform:scale(1.2);
+    cursor: context-menu;
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+}
+.recipebox{
+    font-size: 1.2rem;
+}
+
+.rightbox{
+ position: relative;
+ overflow: hidden;
+ transition: all 0.3s linear 0s;
+ box-shadow: 1px 1px 10px black;
+ border-radius: 20px;
+ 
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(121, 121, 121, 0.602);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.2 rem;
+}
+
